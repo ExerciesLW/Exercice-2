@@ -1,0 +1,56 @@
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 100px calc((1920px - 1280px)/2);
+}
+.gridContainer .form{
+    width: 100%;
+    height: 100%;
+}
+.gridContainer .form input{
+    padding: 10px 0 10px 20px;
+    width: 400px;
+    border-radius: 20px;
+    border: 2px solid var(--secondary-color);
+    outline: none;
+    filter: drop-shadow(0 0 0 var(--primary-color));
+    transition: all .3s;
+    font-family: var(--text-font);
+    color: var(--black);
+}
+.gridContainer .form .item{
+    margin-bottom: 10px;
+}
+.gridContainer .form .label{
+    padding-left: 20px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+.gridContainer .form input:focus-visible{
+    border-color: var(--primary-color);
+    filter: drop-shadow(0 2px 5px var(--primary-color));
+}
+.gridContainer .form .group{
+    display: flex;
+}
+.gridContainer .form .group input{
+    margin-right: 20px;
+    width: 190px;
+}
+.gridContainer .form textarea{
+    padding: 10px 20px 10px 20px;
+    height: 250px;
+    width: 400px;
+    border-radius: 20px;
+    border: 2px solid var(--secondary-color);
+    outline: none;
+    filter: drop-shadow(0 0 0 var(--primary-color));
+    transition: all .3s;
+    font-family: var(--text-font);
+    color: var(--black);
+    resize: none;
+}
+.gridContainer .form textarea:focus-visible{
+    border-color: var(--primary-color);
+    filter: drop-shadow(0 2px 5px var(--primary-color));
+}

@@ -1,0 +1,104 @@
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    padding: 100px 0;
+}
+ul li{
+    margin: 0 10px;
+}
+ul li p{
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+select {
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color:  var(--secondary-color);
+    background-color: #fff;
+    background-image: none;
+    cursor: pointer;
+}
+select:disabled{
+    background-color:  var(--secondary-color);
+    color: #fff;
+}
+.select{
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid var(--secondary-color);
+}
+.selectDisabled{
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid var(--secondary-color);
+}
+.selectDisabled::after{
+    background-color:  var(--secondary-color);
+    color: #fff;
+}
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: -5px;
+    right: 0;
+    padding: 1em;
+    color:  var(--secondary-color);
+    background-color: #fff;
+    transition: .25s all ease;
+    pointer-events: none;
+}
+.List{
+    padding: 0 calc((1920px - 1280px)/2);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+    min-height: calc(100vh - 350px);
+    margin-bottom: 100px;
+}
+.List div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 300px;
+    background-color: #fff;
+    filter: drop-shadow(0 0 0 rgba(0,0,0,0));
+    transition: all .2s;
+}
+.List div:hover{
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,.3));
+}
+.List h2{
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+.List img{
+    width: 100%;
+}
+.List a{
+    padding: 5px 20px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    transition: all .2s;
+    color: #fff;
+    font-weight: 600;
+}
+.List a:hover{
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}

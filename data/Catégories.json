@@ -1,0 +1,32 @@
+[
+    {
+        "name" : "Séries",
+        "list" : [
+            "Stranger Things",
+            "Magnum",
+            "K2000",
+            "Supernatural",
+            "Alerte Cobra",
+            "Sherif Fais Moi Peur",
+            "Amicalement Votre",
+            "Agence Tout Risque",
+            "Breaking Bad",
+            "Starsky et Hutch"
+        ]
+    },
+    {
+        "name" : "Films",
+        "list" : [
+            "Ghostbuster",
+            "Scoubidoo",
+            "Retour vers le Futur",
+            "Choupette",
+            "Boulevard de la Mort",
+            "Bullit",
+            "James Bond - GoldFinger",
+            "Taxi",
+            "Fast & Furious",
+            "Christine"
+        ]
+    }
+]

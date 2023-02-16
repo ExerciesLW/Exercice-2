@@ -1,0 +1,107 @@
+header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 600px;
+    padding: 0 calc((1920px - 1280px)/2);
+}
+
+header img{
+    width: 550px;
+}
+
+header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header h1{
+    width: 550px;
+    color: var(--primary-color);
+    letter-spacing: 4px;
+    font-size: 30px;
+    text-align: center;
+}
+header a{
+    padding: 10px 20px;
+    width: 200px;
+    text-align: center;
+    font-weight: 600;
+    margin: 20px 0;
+    color: var(--white);
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    transition: all .2s ease-in-out;
+}
+header a:after{
+    content: "Vous Aussi !";
+}
+header a:hover{
+    background-color: var(--primary-color);
+}
+header a:hover:after{
+    content: "Accéder au Magasin"
+}
+
+.location{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 600px;
+    width: 100%;
+    padding: 0 calc((1920px - 1280px)/2);
+    background-color: var(--secondary-color);
+}
+.location div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.location div:nth-child(1){
+    align-items: center;
+}
+.location img{
+    width: 450px;
+}
+.location h2 {
+    color: var(--white);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.location p{
+    color: var(--white);
+    font-size: 18px;
+}
+
+.deadline {
+    height: 600px;
+    width: 100%;
+    padding: 0 calc((1920px - 1280px)/2);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.deadline div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.deadline div:nth-child(2){
+    align-items: center;
+}
+.deadline img{
+    width: 300px;
+}
+.deadline h2 {
+    color: var(--secondary-color);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.deadline p{
+    color: var(--secondary-color);
+    font-size: 18px;
+}
